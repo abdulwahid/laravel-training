@@ -1,1 +1,1 @@
-# laravel-traning
+laravel-training
