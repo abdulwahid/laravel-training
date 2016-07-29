@@ -3,9 +3,9 @@
 @section('content')
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
-			<div class="panel panel-default">
+			<div class="panel panel-primary">
 				<div class="panel-heading">
-					<h3>Create a new User and store it into session!</h3>
+					<h4>Add a new User and store it into session </h4>
 				</div>
 				<div class="panel-body">
 					<form class="form-horizontal" method="POST" role="form" action="{{url('user/store')}}" >
