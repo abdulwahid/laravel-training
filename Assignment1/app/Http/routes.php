@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 Route::group(['prefix'=>'user'], function(){
-	Route::get('create', 'UserController@create');
-	Route::post('store', 'UserController@store');
-	Route::get('list', 'UserController@showAll');
+	Route::get('create', 'UserController@create')->name('create');
+	Route::post('store', 'UserController@store')->name('store');
+	Route::get('list', 'UserController@showAll')->name('show');
 });

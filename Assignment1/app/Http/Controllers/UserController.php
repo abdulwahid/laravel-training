@@ -25,7 +25,7 @@ class UserController extends Controller
     	]);
 
     	$request->session()->push('user.data', $_POST);
-    	return redirect('user/list');
+    	return redirect()->route('show');
     }
     public function showAll(Request $request)
     {

@@ -51,8 +51,8 @@
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
-                    <li><a href="{{ url('/user/create') }}">Add New User</a></li>
-                    <li><a href="{{ url('/user/list') }}">List of users</a></li>
+                    <li><a href="{{ url()->route('create') }}">Add New User</a></li>
+                    <li><a href="{{ url()->route('show') }}">List of users</a></li>
                 </ul>
             </div>
         </div>
