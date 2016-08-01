@@ -61,33 +61,6 @@
 			  	
  @stop	
 
-@section('footer')
-	
-	 <script>
-	// 	  $( document ).ready(function() {
-			
-	// 		$('#add_user').submit(function( event ){
-	// 			alert('dsd');
-	// 		    // $.ajaxSetup({
-	// 		    //     header:$('meta[name="_token"]').attr('content')
-	// 		    // })
-	// 		    // e.preventDefault(e);
 
-	// 		    //     $.ajax({
-
-	// 		    //     type:"POST",
-	// 		    //     url:'/validate_data',
-	// 		    //     data:$(this).serialize(),
-	// 		    //     //dataType: 'json',
-	// 		    //     success: function(data){
-	// 		    //         //console.log(data);
-	// 		    //     }
-	// 		    // })
-	// 		    // });
-	// 	});
-	// });		  
-	</script>
-
-@stop
 
  

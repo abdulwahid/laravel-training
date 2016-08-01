@@ -44,24 +44,7 @@ class UserController extends Controller
             return redirect('user')
                         ->withErrors($validator);
         }
-    	
-        // $this->validate($request, [
-        //     'name'   => 'required|min:5|alpha_num',
-        //     'f_name' => 'required|min:3|alpha',
-        //     'l_name' => 'required|min:3|alpha',
-        //     'email'  => 'required|email',
-        //     'address'=> 'email',    
-        // ]);
 
-        // $userinfo = array();	
-        
-        // $userinfo = array(
-        //         'name'   => $request->input('name'),
-        //         'f_name' => $request->input('f_name'), 
-        //         'l_name' => $request->input('l_name'), 
-        //         'email'  => $request->input('email'), 
-        // );
-        //$input = Request::all();
 
         $request->session()->push( 'userinfo.users', $_POST );
         return redirect()->action('UserController@render_data');
@@ -72,7 +55,7 @@ class UserController extends Controller
     public function render_data(Request $request)
     {
 
-        //$data['userinfo'] = $request->session()->all();
+        
          $data['userinfo']=$request->session()->get('userinfo.users');
         //print_r($data);
        
