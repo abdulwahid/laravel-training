@@ -95,6 +95,20 @@ return [
         'attribute-name' => [
             'rule-name' => 'custom-message',
         ],
+        'email' => [
+            'required' => 'We need to know your email.',
+        ],
+        
+        'name' => [
+            'required' => 'User Name required',
+            'min' => 'User Name should contain atleast Five characters',
+        ],
+        'first-name' =>[
+            'required' => 'First Name required',
+        ],
+        'last-name' => [
+            'required' => 'Last Name required',
+        ]
     ],
 
     /*
