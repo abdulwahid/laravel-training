@@ -1,5 +1,5 @@
 
- @extends('default')
+ @extends('layouts.default')
 
 	@section('title')
 	
