@@ -92,7 +92,7 @@ class AuthorController extends Controller
         $messages = [
 
             'username.required'    => trans('validation.required'),
-            'username.min'         => trans('validation.min'),
+            'username.min'         => trans('validation.min.numeric'),
             'email.required'       => trans('validation.required'),
             'firstName.required'   => trans('validation.required'),
             'lastName.required'    => trans('validation.required'),
