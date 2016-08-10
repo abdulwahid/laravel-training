@@ -33,9 +33,9 @@ class ArticleController extends Controller
     {
         $messages = [
 
-            'title.required'    => 'Title is required',
-            'body.required'     => 'Body text is required',
-
+            'title.required'    => trans('validation.required'),
+            'body.required'     => trans('validation.required'),
+            'author.required'   => trans('validation.required')
 
         ];
 
@@ -89,9 +89,9 @@ class ArticleController extends Controller
     {
         $messages = [
 
-            'title.required'    => 'Title is required',
-            'body.required'     => 'Body text is required',
-
+            'title.required'    => trans('validation.required'),
+            'body.required'     => trans('validation.required'),
+            'author.required'   => trans('validation.required')
 
         ];
 

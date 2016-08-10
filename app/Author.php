@@ -31,7 +31,7 @@ class Author extends Model
     public function updateAuthor($username,$firstName,$lastName,$email,$id)
     {
         $affectedRows = Author::where('id', '=', $id)
-            ->update(array('username' => $username,'first_name'=>$firstName,'last_name'=>$lastName,'email'=>$email));
+            ->update(['username' => $username,'first_name'=>$firstName,'last_name'=>$lastName,'email'=>$email]);
 
         if($affectedRows > 0)
         {

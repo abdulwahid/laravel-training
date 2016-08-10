@@ -30,11 +30,11 @@ class AuthorController extends Controller
         //print_r($request->all());
         $messages = [
 
-            'username.required'    => 'Username is required',
-            'username.min'         => 'Username should be at least 5 characters long',
-            'email.required'       => 'Email is required',
-            'firstName.required'   => 'First name is required',
-            'lastName.required'    => 'Last name is required',
+            'username.required'    => trans('validation.required'),
+            'username.min'         => trans('validation.min.numeric'),
+            'email.required'       => trans('validation.required'),
+            'firstName.required'   => trans('validation.required'),
+            'lastName.required'    => trans('validation.required'),
 
 
         ];
@@ -91,11 +91,11 @@ class AuthorController extends Controller
     {
         $messages = [
 
-            'username.required'    => 'Username is required',
-            'username.min'         => 'Username should be at least 5 characters long',
-            'email.required'       => 'Email is required',
-            'firstName.required'   => 'First name is required',
-            'lastName.required'    => 'Last name is required',
+            'username.required'    => trans('validation.required'),
+            'username.min'         => trans('validation.min'),
+            'email.required'       => trans('validation.required'),
+            'firstName.required'   => trans('validation.required'),
+            'lastName.required'    => trans('validation.required'),
 
 
         ];
